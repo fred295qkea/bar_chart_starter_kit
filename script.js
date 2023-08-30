@@ -4,7 +4,7 @@ const arr = [];
 setInterval(randTal, 1000);
 
 function randTal() {
-  let barHeight = Math.floor(Math.random() * 100);
+  let barHeight = Math.floor(Math.random() * 100) + 1;
   const li = document.createElement("li");
   li.style.setProperty("--height", barHeight);
   list.appendChild(li);
